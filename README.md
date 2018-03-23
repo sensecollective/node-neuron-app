@@ -4,5 +4,8 @@
 [![Build Status](https://travis-ci.org/doc-ai/node-neuron-app.svg?branch=master)](https://travis-ci.org/doc-ai/node-neuron-app)
 [![Join the chat at https://gitter.im/doc-ai-friends/Lobby](https://badges.gitter.im/doc-ai-friends/Lobby.svg)](https://gitter.im/doc-ai-friends/Lobby.svg?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)
+
 
 Node.js library that has all required interfaces to quickly build a Neuron app.
