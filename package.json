@@ -12,9 +12,7 @@
       "url": "https://github.com/doc-ai/node-neuron-app/graphs/contributors"
     }
   ],
-  "files": [
-    "lib/"
-  ],
+  "directories": ["lib/"],
   "scripts": {
     "clean": "rm -rf lib",
     "build": "npm run clean && babel src -d lib",
