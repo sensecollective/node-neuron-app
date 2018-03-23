@@ -1,0 +1,10 @@
+extends:
+  - airbnb-base
+  - prettier
+parser: babel-eslint
+rules:
+  no-underscore-dangle: 0
+  import/prefer-default-export: 0
+  comma-dangle:
+    - error
+    - always-multiline

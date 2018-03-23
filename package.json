@@ -1,0 +1,69 @@
+{
+  "name": "@doc.ai/neuron-app",
+  "version": "0.0.0-development",
+  "description": "Neuron app framework",
+  "main": "lib/index.js",
+  "repository": "git@github.com:doc-ai/node-neuron-app.git",
+  "license": "Apache-2.0",
+  "author": "doc.ai Team <dev@doc.ai>",
+  "contributors": [
+    {
+      "name": "node-neuron-app contributors",
+      "url": "https://github.com/doc-ai/node-neuron-app/graphs/contributors"
+    }
+  ],
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "npm run clean && babel src -d lib",
+    "watch": "npm run clean && babel src -w -d lib",
+    "test": "echo 'No tests yet'",
+    "lint": "mkdir -p reports && eslint -f junit . > reports/eslint.xml",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --single-quote --trailing-comma all",
+      "eslint . --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "async-exit-hook": "^2.0.1",
+    "axios": "^0.17.0",
+    "consul": "^0.30.0",
+    "create-error": "^0.3.1",
+    "debug": "^3.1.0",
+    "detect-port-alt": "^1.1.3",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "fs-extra": "^4.0.2",
+    "http-errors": "^1.6.2",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "mime-types": "^2.1.17",
+    "rc": "^1.2.2",
+    "semver": "^5.4.1",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-import": "^2.7.0",
+    "flow-bin": "^0.57.3",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4",
+    "semantic-release": "^15.1.4"
+  }
+}
