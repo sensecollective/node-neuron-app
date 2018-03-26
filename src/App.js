@@ -51,7 +51,7 @@ export class App {
    * @param {Object} params.customConfig If specified, adds app specific custom config.
    */
   constructor(params: { rootDir?: string, customConfig?: Object } = {}) {
-    this.rootDir = path.dirname(process.mainModule.filename);
+    this.rootDir = process.cwd();
     if (params.rootDir) {
       this.rootDir = params.rootDir;
     }
