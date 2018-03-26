@@ -12,9 +12,7 @@
       "url": "https://github.com/doc-ai/node-neuron-app/graphs/contributors"
     }
   ],
-  "directories": [
-    "lib/"
-  ],
+  "directories": ["lib/"],
   "bin": {
     "neuron-app": "./bin/neuron-app.js"
   },
@@ -39,7 +37,12 @@
     }
   },
   "dependencies": {
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
     "@babel/polyfill": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-flow": "^7.0.0-beta.42",
+    "@babel/preset-stage-0": "^7.0.0-beta.42",
     "@doc.ai/eslint-config-neuron": "^1.0.0",
     "async-exit-hook": "^2.0.1",
     "axios": "^0.18.0",
@@ -62,21 +65,16 @@
     "nodemon": "^1.17.2",
     "npm": "^5.7.1",
     "pm2": "^2.10.1",
+    "prettier": "^1.7.4",
     "rc": "^1.2.2",
     "semver": "^5.4.1",
     "validate-npm-package-name": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.42",
-    "@babel/core": "^7.0.0-beta.42",
-    "@babel/preset-env": "^7.0.0-beta.42",
-    "@babel/preset-flow": "^7.0.0-beta.42",
-    "@babel/preset-stage-0": "^7.0.0-beta.42",
     "cz-conventional-changelog": "^2.1.0",
     "flow-bin": "^0.68.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.0",
-    "prettier": "^1.7.4",
     "semantic-release": "^15.1.4"
   }
 }
