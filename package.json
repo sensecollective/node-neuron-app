@@ -12,7 +12,9 @@
       "url": "https://github.com/doc-ai/node-neuron-app/graphs/contributors"
     }
   ],
-  "directories": ["lib/"],
+  "directories": [
+    "lib/"
+  ],
   "bin": {
     "neuron-app": "./bin/neuron-app.js"
   },
@@ -63,8 +65,6 @@
     "koa-router": "^7.3.0",
     "mime-types": "^2.1.17",
     "nodemon": "^1.17.2",
-    "npm": "^5.7.1",
-    "pm2": "^2.10.1",
     "prettier": "^1.7.4",
     "rc": "^1.2.2",
     "semver": "^5.4.1",
