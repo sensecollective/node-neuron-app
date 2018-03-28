@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const spawn = require('cross-spawn');
 
 const app = require.resolve(process.cwd());
-const nodemonBin = path.resolve(__dirname, '../node_modules/.bin/nodemon');
+const nodemonBin = path.resolve(process.cwd(), 'node_modules/.bin/nodemon');
 const buildCmd = path.resolve(__dirname, 'build.js');
 const lintCmd = path.resolve(__dirname, 'lint.js');
 

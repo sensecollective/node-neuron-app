@@ -16,7 +16,7 @@ const chalk = require('chalk');
 const spawn = require('cross-spawn');
 
 const result = spawn.sync(
-  path.resolve(__dirname, '../node_modules/.bin/prettier'),
+  path.resolve(process.cwd(), 'node_modules/.bin/prettier'),
   [
     '--write',
     '--single-quote',

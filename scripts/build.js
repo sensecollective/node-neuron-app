@@ -20,7 +20,7 @@ const watch = process.argv[process.argv.length - 1] === '--watch';
 const appDir = fs.realpathSync(process.cwd());
 
 const result = spawn.sync(
-  path.resolve(__dirname, '../node_modules/.bin/babel'),
+  path.resolve(process.cwd(), 'node_modules/.bin/babel'),
   [
     path.resolve(appDir, 'src'),
     '--config-file',

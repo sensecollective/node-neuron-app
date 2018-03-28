@@ -18,8 +18,8 @@ const spawn = require('cross-spawn');
 const watch = process.argv.includes('--watch');
 const fix = process.argv.includes('--fix');
 
-const eslintBin = path.resolve(__dirname, '../node_modules/.bin/eslint');
-const nodemonBin = path.resolve(__dirname, '../node_modules/.bin/nodemon');
+const eslintBin = path.resolve(process.cwd(), 'node_modules/.bin/eslint');
+const nodemonBin = path.resolve(process.cwd(), 'node_modules/.bin/nodemon');
 
 const eslintConfig = path.resolve(__dirname, '../.eslintrc.yaml');
 
