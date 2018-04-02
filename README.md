@@ -9,3 +9,11 @@
 
 
 Node.js library that has all required interfaces to quickly build a Neuron app.
+
+## Authors
+
+* **[Bohdan Tkachenko](https://github.com/BohdanTkachenko)** - *Architecture and Initial work*
+* **[Akshay Sharma](https://github.com/shad0wfax)** - *TokenBasedAuthStage implementation*
+* **[Kartik Thakore](https://github.com/kthakore)** - *FacebookTokenAuthStage and ImportAuthStage implementation*
+
+See also the list of [contributors](https://github.com/doc-ai/node-neuron-app/contributors) who participated in this project.
