@@ -38,10 +38,12 @@ export class BaseAuthStage {
       throw new AuthStageInitError('Auth stage logo is not defined');
     }
 
-    this.title = options.title;
-    this.logo = options.logo;
+    const { title, logo, ...rest } = options; 
+
+    this.title = title;
+    this.logo = logo;
     this.type = type;
-    this.options = {};
+    this.options = rest;
   }
 
   getOptions(): Object {
